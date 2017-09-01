@@ -30,6 +30,6 @@ job_type :custom_runner,
 
 # Learn more: http://github.com/javan/whenever
 
-every 1.hours do
+every 2.hours, :at => ('9'..'22').to_a.collect do
   custom_runner "Post.tweet_update"
 end
