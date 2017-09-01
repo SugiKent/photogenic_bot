@@ -30,6 +30,6 @@ job_type :custom_runner,
 
 # Learn more: http://github.com/javan/whenever
 
-every 15.minute do
+every 1.hours do
   custom_runner "Post.tweet_update"
 end
