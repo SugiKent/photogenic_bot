@@ -30,6 +30,8 @@ job_type :custom_runner,
 
 # Learn more: http://github.com/javan/whenever
 
+# 9時から22時の間で2時間に一回
+# 実質10時から22時。
 every 2.hours, :at => ('9'..'22').to_a.collect do
   custom_runner "Post.tweet_update"
 end
