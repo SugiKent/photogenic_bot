@@ -2,7 +2,7 @@
 #_homeは各自環境で設定してください。
 _proj_path = "#{File.expand_path("../..", __FILE__)}"
 _proj_name = File.basename(_proj_path)
-_home = ENV.fetch("HOME") { "/home/photo" }
+_home = ENV.fetch("HOME") { "/home/photogenic_bot" }
 
 pidfile "#{_home}/run/#{_proj_name}.pid"
 bind "unix://#{_home}/run/#{_proj_name}.sock"
