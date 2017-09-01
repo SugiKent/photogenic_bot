@@ -32,6 +32,6 @@ job_type :custom_runner,
 
 # 9時から22時の間で2時間に一回
 # 実質10時から22時。
-every 2.hours, :at => ('9'..'22').to_a.collect do
+every 2.hours, :at => ('18'..'7').to_a.collect do
   custom_runner "Post.tweet_update"
 end
