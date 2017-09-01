@@ -31,5 +31,5 @@ job_type :custom_runner,
 # Learn more: http://github.com/javan/whenever
 
 every 15.minute do
-  runner "Post.tweet_update"
+  custom_runner "Post.tweet_update"
 end
