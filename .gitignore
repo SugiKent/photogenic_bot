@@ -9,6 +9,7 @@
 
 .env
 config/secrets.yml
+config/puma.rb
 
 # Ignore all logfiles and tempfiles.
 /log/*
